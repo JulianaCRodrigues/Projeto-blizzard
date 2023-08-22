@@ -1,5 +1,5 @@
 .s-hero {
-  // position: relative;
+
   .slide-principal {
     width: 100%;
     height: 73.6rem;
@@ -10,15 +10,18 @@
 
         &.slide-01 {
           background: url('assets/banner-slide-01.jpg') no-repeat center center;
-    
+
         }
+
         &.slide-02 {
           background: url('assets/banner-slide-02.jpg') no-repeat center center;
           background-size: cover;
         }
+
         &.slide-03 {
           background: url('assets/banner-slide-03.jpg') no-repeat center center;
           background-size: cover;
+
           .left-content {
             max-width: 62.6rem;
           }
@@ -125,13 +128,14 @@
                   opacity: 0;
                 }
               }
+
               .icon {
                 position: relative;
                 z-index: 1;
                 width: 5.1rem;
                 height: 5.1rem;
                 border-radius: 50%;
-                background: linear-gradient(136.72deg, rgba(7,7,10,0.86) 19.22%, rgba(15,16,22,0.5) 75.59%);
+                background: linear-gradient(136.72deg, rgba(7, 7, 10, 0.86) 19.22%, rgba(15, 16, 22, 0.5) 75.59%);
                 backdrop-filter: blur(3px);
                 display: flex;
                 align-items: center;
@@ -144,9 +148,67 @@
     }
   }
 
-  // .slide-thumbnail .mySwiper2{
-  //   position: absolute;
-  //   z-index: 2;
 
-  // }
+
+}
+
+.s-games {
+  padding-top: 8.3rem;
+  padding-bottom: 11rem;
+  .top {
+    @include flex(row, flex-end, space-between);
+
+    .left-top {
+      @include flex(row, flex-start, space-between);
+      width: 100%;
+      max-width: 39.9rem;
+
+      span {
+        color: #8F9199;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+        display: block;
+        margin-top: 1.1rem;
+      }
+
+      h2 {
+        color: $white;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 110.2%;
+        width: 100%;
+        max-width: 17.5rem;
+      }
+    }
+
+    .right-top {
+      width: 100%;
+      max-width: 58.3rem;
+      @include flex(row, center, space-between);
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          &:not(:first-child) {
+            margin-left: 2.4rem;
+          }
+        }
+      }
+      .btn-all-games {
+        display: flex;
+        align-items: center;
+        color: $primary-default;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        img {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
 }
