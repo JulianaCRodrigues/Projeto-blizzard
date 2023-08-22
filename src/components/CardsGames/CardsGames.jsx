@@ -38,6 +38,15 @@ function CardsGames() {
           </div>
 
         </div>
+
+<div className="tab-games-content">
+<div className="tab-pane-games">
+  
+</div>
+
+</div>
+
+
       </div>
 
 
