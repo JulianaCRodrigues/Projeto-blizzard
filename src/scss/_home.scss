@@ -155,8 +155,10 @@
 .s-games {
   padding-top: 8.3rem;
   padding-bottom: 11rem;
+
   .top {
     @include flex(row, flex-end, space-between);
+    margin-bottom: 7.8rem;
 
     .left-top {
       @include flex(row, flex-start, space-between);
@@ -197,6 +199,7 @@
           }
         }
       }
+
       .btn-all-games {
         display: flex;
         align-items: center;
@@ -204,11 +207,44 @@
         font-size: 1.6rem;
         font-weight: 600;
         line-height: 2.4rem;
+
         img {
           margin-right: 1rem;
         }
       }
     }
   }
+
+  .tab-games-content {
+    .tab-pane-games {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 4.7rem 3.2rem;
+
+      .card-all-games {
+        width: 100%;
+        max-width: 28rem;
+        height: 38.4rem;
+        border-radius: 4.3px;
+        border: 1.613px solid #212428;
+        @include flex(column, center, center);
+
+        span {
+          display: flex;
+          align-items: center;
+          margin-top: 3.4rem;
+          color: $white;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 2.4rem;
+
+          img {
+            margin-right: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+
 
 }

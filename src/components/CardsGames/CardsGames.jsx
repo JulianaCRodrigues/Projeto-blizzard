@@ -43,33 +43,33 @@ function CardsGames() {
 
         </div>
 
-<div className="tab-games-content">
-<div className="tab-pane-games">
-{
+        <div className="tab-games-content">
+          <div className="tab-pane-games">
+            {
 
-cardList &&(
-  cardList.map((card) => {
-    return (
-      <CardComponent 
-      key={card.title}
-      image ={card.image}
-      title ={card.title}
-      description={card.description}
-      />
-    )
-  } )
-)
-}
-<a href="" className='card-all-games'>
-  <img src="assets/logo.svg" alt="" />
-  <span>
-    <img src="assets/icon-group-white.svg" alt="" />
-    Ver todos jogos
-  </span>
-</a>
-</div>
+              cardList && (
+                cardList.map((card) => {
+                  return (
+                    <CardComponent
+                      key={card.title}
+                      image={card.image}
+                      title={card.title}
+                      description={card.description}
+                    />
+                  )
+                })
+              )
+            }
+            <a href="" className='card-all-games'>
+              <img src="assets/logo.svg" alt="" />
+              <span>
+                <img src="assets/icon-group-white.svg" alt="" />
+                Ver todos jogos
+              </span>
+            </a>
+          </div>
 
-</div>
+        </div>
 
 
       </div>
