@@ -1,3 +1,7 @@
+import cardList from './Card'
+
+import CardComponent from "./CardComponent";
+
 function CardsGames() {
   return (
 
@@ -41,7 +45,21 @@ function CardsGames() {
 
 <div className="tab-games-content">
 <div className="tab-pane-games">
-  
+{
+
+cardList &&(
+  cardList.map((card) => {
+    return (
+      <CardComponent 
+      key={card.title}
+      image ={card.image}
+      title ={card.title}
+      description={card.description}
+      />
+    )
+  } )
+)
+}
 </div>
 
 </div>
