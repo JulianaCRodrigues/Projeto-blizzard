@@ -60,6 +60,13 @@ cardList &&(
   } )
 )
 }
+<a href="" className='card-all-games'>
+  <img src="assets/logo.svg" alt="" />
+  <span>
+    <img src="assets/icon-group-white.svg" alt="" />
+    Ver todos jogos
+  </span>
+</a>
 </div>
 
 </div>

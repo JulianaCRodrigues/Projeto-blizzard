@@ -19,8 +19,6 @@ const cards = [
     title:"World of Warcraft Classic",
     description:"RPG multijogador em massa",
   },
-
-
   {
     image:"assets/card-game-05.jpg",
     title:"Hearthstone",
@@ -41,9 +39,6 @@ const cards = [
     title:"Warcraft III Reforged",
     description:"RPG de ação",
   },
-
-
-
   {
     image:"assets/card-game-09.jpg",
     title:"Diablo III",
@@ -58,11 +53,6 @@ const cards = [
     image:"assets/card-game-11.jpg",
     title:"StarCraft Remastered",
     description:"RPG de ação",
-  },
-  {
-    image:"assets/card-game-12.jpg",
-    title:"",
-    description:"",
   },
 ];
 

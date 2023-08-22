@@ -2,6 +2,7 @@
 
 function CardComponent({ image, title, description }) {
   return (
+    
     <a href="" className="game-card">
       <div className="image">
         <img src={image} alt="" />
