@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 
-function CardComponent({ image, title, description }) {
+function CardComponent({image, title, description }) {
   return (
-    
-    <a href="" className="game-card">
+    <a href="" className="game-card" >
       <div className="image">
         <img src={image} alt="" />
       </div>
