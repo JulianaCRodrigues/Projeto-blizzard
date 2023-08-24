@@ -1,10 +1,10 @@
 
 function Donwloads() {
   return (
-    <section className="s-Downloads">
+    <section className="s-download">
       <div className="container">
         <div className="text-left">
-          <img src="assets/logo-battle.svg" alt="" />
+          <img src="assets/logo-battle.svg" className="logo" alt="" />
           <h2>Baixe agora o battle.net</h2>
           <ul>
             <li>
