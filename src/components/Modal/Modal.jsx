@@ -1,10 +1,21 @@
+/* eslint-disable react/prop-types */
 
-function Modal() {
+function Modal ({ id ='modal', onClose = () => {}}) {
+
+  const handleOutsideClick = (event) => {
+    //TODO:  console.log('Clicked on', event.target.id);
+    if (event.target.id === id) {
+      onClose();
+    }
+  }
+
   return (
-    <section className="modal">
+    <section id={id} className="modal" onClick={handleOutsideClick}>
       <div className="overlay"></div>
-      <div className="box">
-        <button className="close">
+      <div  className="box">
+        <button 
+        onClick={onClose}
+        className="close">
           <img src="assets/close.svg" alt="" />
         </button>
         <img src="assets/logo-battle.svg" className="logo" alt="" />

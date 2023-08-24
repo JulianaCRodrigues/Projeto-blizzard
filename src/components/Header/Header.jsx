@@ -2,15 +2,13 @@ import { useState } from "react";
 import Modal from '../Modal/Modal'
 
 
-
 function Header() {
 
   const [isModalVisible, setIsModalVisible] = useState(false)
 
-  
   return (
     <header>
-      
+
       <div className="container">
         <div className="left-container">
           <a href="" className="logo">
@@ -49,13 +47,15 @@ function Header() {
           </nav>
         </div>
         <div className="right-container">
-          <a href="" className="btn btn-outline">Criar Conta</a>
-          <a href="" className="btn btn-primary"
-            onClick={() => setIsModalVisible(true)}          
-          >
+        <button className="btn btn-outline">Criar Conta</button>
+          <button className="btn btn-primary" onClick={() => setIsModalVisible(true)}>
             <img src="assets/icon-login.svg" alt="Icone login" title="Icone login" />
-            Logar</a>
-            {isModalVisible ? <Modal /> : null}
+            Logar
+          </button>
+          {isModalVisible ? 
+          <Modal 
+            onClose = {() => setIsModalVisible(false)}
+          /> : null}
         </div>
       </div>
     </header>
