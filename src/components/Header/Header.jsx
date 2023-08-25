@@ -1,15 +1,22 @@
 import { useState } from "react";
 import Modal from '../Modal/Modal'
 import MenuJogos from '../Menus/MenuJogos'
+import MenuEsportes from "../Menus/MenuEsportes";
+
 
 
 function Header() {
 
   const [isModalVisible, setIsModalVisible] = useState(false)
-  const [menuAberto, setMenuAberto] = useState(false);
+  const [menuAbertoJogos, setMenuAbertoJogos] = useState(false);
+  const [menuAbertoEsportes, setMenuAbertoEsportes] = useState(false);
 
-  const alterarMenu = () => {
-    setMenuAberto(!menuAberto);
+  const alterarMenuJogos = () => {
+    setMenuAbertoJogos(!menuAbertoJogos);
+  }
+
+  const alterarMenuEsportes = () => {
+    setMenuAbertoEsportes(!menuAbertoEsportes)
   }
 
   
@@ -26,16 +33,19 @@ function Header() {
                 <a href="#"
                 >
                   Jogos
-                {menuAberto &&  <MenuJogos /> } 
+                {menuAbertoJogos &&  <MenuJogos /> } 
                   <img src="assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" 
-                     onClick = {alterarMenu}
+                     onClick = {alterarMenuJogos}
                   />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   Esportes
-                  <img src="assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" />
+                  {menuAbertoEsportes && <MenuEsportes />}
+                  <img src="assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" 
+                    onClick={alterarMenuEsportes}
+                  />
                 </a>
               </li>
               <li>

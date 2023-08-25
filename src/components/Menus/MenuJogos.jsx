@@ -1,7 +1,7 @@
 
 function MenuJogos() {
   return ( 
-    <div className="menu">
+    <div className="menu menuJogos">
       <div className="area-menu">
         <div className="container">
           <ul>
