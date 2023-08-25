@@ -54,7 +54,7 @@ function MenuEsportes() {
          <li>
           <a href="">
             <div className="icon">
-              <img src="assets/icon-torneiosvg" alt="" />
+              <img src="assets/icon-torneio.svg" alt="" />
             </div>
             <span>Torneios da comunidade</span>
           </a>
