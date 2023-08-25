@@ -1,4 +1,6 @@
 .s-hero {
+  position: relative;
+  z-index: 2;
 
   .slide-principal {
     width: 100%;
@@ -147,8 +149,6 @@
       }
     }
   }
-
-
 
 }
 
@@ -521,6 +521,7 @@
     }
   }
 }
+
 
 @keyframes fadeUp {
   from {

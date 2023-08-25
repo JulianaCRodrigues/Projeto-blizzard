@@ -14,13 +14,14 @@ function App() {
 
   return (
     <>
+      <MenuJogos />
       <Header />
-      <Slider/>
+      <Slider />
       {/* <BannerSlide /> */}
       <CardsGames />
       < Downloads />
-      <MenuJogos />
-      
+
+
     </>
   )
 }
