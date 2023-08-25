@@ -1,14 +1,20 @@
 import { useState } from "react";
 import Modal from '../Modal/Modal'
+import MenuJogos from '../Menus/MenuJogos'
 
 
 function Header() {
 
   const [isModalVisible, setIsModalVisible] = useState(false)
+  const [menuAberto, setMenuAberto] = useState(false);
 
+  const alterarMenu = () => {
+    setMenuAberto(!menuAberto);
+  }
+
+  
   return (
     <header>
-
       <div className="container">
         <div className="left-container">
           <a href="" className="logo">
@@ -17,9 +23,13 @@ function Header() {
           <nav>
             <ul>
               <li>
-                <a href="">
+                <a href="#"
+                >
                   Jogos
-                  <img src="assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" />
+                {menuAberto &&  <MenuJogos /> } 
+                  <img src="assets/arrow-down.svg" alt="Icone de seta" title="Icone de seta" 
+                     onClick = {alterarMenu}
+                  />
                 </a>
               </li>
               <li>
