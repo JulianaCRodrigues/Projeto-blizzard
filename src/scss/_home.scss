@@ -230,41 +230,105 @@
 
   .tab-games-content {
     .tab-pane-games {
-
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 4.7rem 3.2rem;
       animation: fadeUp 4s forwards;
+    }
 
+    .card-all-games {
+      width: 100%;
+      max-width: 28rem;
+      height: 38.4rem;
+      border-radius: 4.3px;
+      border: 1.613px solid #212428;
+      @include flex(column, center, center);
 
+      span {
+        display: flex;
+        align-items: center;
+        margin-top: 3.4rem;
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.4rem;
 
-      .card-all-games {
-        width: 100%;
-        max-width: 28rem;
-        height: 38.4rem;
-        border-radius: 4.3px;
-        border: 1.613px solid #212428;
-        @include flex(column, center, center);
+        img {
+          margin-right: 1.3rem;
+        }
+      }
+    }
+  }
 
+  @include responsive(991px) {
+    .top {
+      .left-top {
         span {
-          display: flex;
-          align-items: center;
-          margin-top: 3.4rem;
-          color: $white;
-          font-size: 1.6rem;
-          font-weight: 600;
-          line-height: 2.4rem;
+          display: none;
+        }
+      }
+    }
+
+    .tab-games-content {
+      .tab-pane-games {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  @include responsive (560px) {
+    .top {
+      margin-bottom: 5.7rem;
+      padding-top: 5.7rem;
+      padding-bottom: 6.9rem;
+
+      .left-top {
+        h2 {
+          font-size: 2.8rem;
+        }
+      }
+
+      .right-top {
+        justify-content: flex-end;
+
+        ul {
+          display: none;
+        }
+
+        .btn-all-games {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .tab-games-content {
+      .tab-pane-games {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2.4rem 1.6rem;
+
+        .card-all-games {
+          height: 21.2rem;
 
           img {
-            margin-right: 1.3rem;
+            max-width: 6.9rem;
+          }
+
+          span {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+
+            img {
+              display: none;
+            }
           }
         }
       }
     }
   }
 
-
 }
+
+
 
 .s-download {
   width: 100%;
@@ -375,6 +439,49 @@
       animation: float 6s ease-in-out infinite;
     }
   }
+
+  @include responsive(991px) {
+    .text-left {
+      max-width: 29.9rem;
+
+      h2 {
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    .image {
+      right: -35rem;
+    }
+
+  }
+
+  @include responsive(560px) {
+    height: auto;
+    padding-bottom: 5rem;
+
+    .text-left {
+      padding-top: 6.3rem;
+      margin-bottom: 4rem;
+
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+
+    .image {
+      position: relative;
+      top: 0;
+      right: 0;
+      height: 27rem;
+
+      .img-sm {
+        right: 0;
+        bottom: 0;
+        max-width: 27.6rem;
+      }
+    }
+  }
 }
 
 
@@ -388,4 +495,7 @@
     opacity: 1;
     transform: translateY(0px);
   }
+
+  ;
+
 }
