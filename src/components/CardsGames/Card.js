@@ -3,7 +3,7 @@ const cards = [
     image:"assets/card-game-01.jpg",
     title:"Diablo II: Resurrected",
     description:"RPG de ação",
-
+    
   },
   {
     image:"assets/card-game-02.jpg",
