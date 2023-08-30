@@ -8,21 +8,21 @@ function Donwloads() {
           <h2>Baixe agora o battle.net</h2>
           <ul>
             <li>
-              <di className="icon">
+              <div className="icon">
                 <img src="assets/icon-jogos.svg" alt="" />
-              </di>
+              </div>
               <p>Seus jogos em um só lugar</p>
             </li>
             <li>
-              <di className="icon">
+              <div className="icon">
                 <img src="assets/icon-conect.svg" alt="" />
-              </di>
+              </div>
               <p>Conecte-se aos seus amigos</p>
             </li>
             <li>
-              <di className="icon">
+              <div className="icon">
                 <img src="assets/icon-buy.svg" alt="" />
-              </di>
+              </div>
               <p>Compre jogos e itens digitais</p>
             </li>
           </ul>

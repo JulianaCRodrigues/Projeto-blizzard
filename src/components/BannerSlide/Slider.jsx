@@ -18,6 +18,7 @@ function Slider() {
             <Swiper
               slidesPerView={5}
               direction='vertical'
+              spaceBetween={20}
             >
               
               <SwiperSlide>
