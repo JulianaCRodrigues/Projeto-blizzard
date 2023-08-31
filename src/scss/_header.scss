@@ -81,6 +81,7 @@ header {
     }
 
   }
+
   
   @include responsive(991px) {
     .left-container {
@@ -295,7 +296,6 @@ header {
     }
   }
 
-
   .area-menu {
     padding-top: 3.8rem;
     padding-bottom: 5.5rem;
@@ -361,5 +361,9 @@ header {
         }
       }
     }
+  }
+
+  &.menu-mobile {
+    
   }
 }

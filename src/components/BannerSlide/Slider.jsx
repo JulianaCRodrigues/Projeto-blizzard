@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import SlidePrincipal from './SlidePrincipal';
 
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
@@ -10,7 +11,12 @@ function Slider() {
   return (
 
     <Swiper
-      slidesPerView={1}>
+    effect="fade"
+    autoplay={{
+      delay: 5000,
+      disableOnInteraction: false,
+    }}
+  >
 
       <SwiperSlide>
         <section className='s-hero'>
@@ -24,11 +30,8 @@ function Slider() {
               <SwiperSlide>
                 <div className='swiper-wrapper'>
                   <div className="swiper-slide">
-                  
                     <img src="assets/logo-xs-diablo.png" alt="" />
-                 
                   </div>
-                  
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -60,9 +63,7 @@ function Slider() {
                 </div>
               </SwiperSlide>
             </Swiper>
-
           </div>
-
           <div className='slide-principal'>
             <div className='swiper-wrapper'>
               <div className="swiper-slide slide-01">
@@ -76,6 +77,9 @@ function Slider() {
                 />
               </div>
             </div>
+          </div>
+          <div className='swiper-progress-bar'>
+            <span className='slide-progress-bar'></span>
           </div>
         </section>
       </SwiperSlide>

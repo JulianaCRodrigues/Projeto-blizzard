@@ -7,10 +7,12 @@ import CardsGames from './components/CardsGames/CardsGames'
 import Downloads from './components/DownloadsComponent/Downloads'
 
 
+
 function App() {
 
   return (
     <>
+   
       <Header />
       <Slider />
       <CardsGames />
