@@ -78,6 +78,7 @@ header {
     }
     .btn-mobile {
       display: none;
+
     }
 
   }
@@ -93,6 +94,10 @@ header {
       .btn-mobile{
       display: block;
       margin-left: 8.9rem;
+
+      .hidden {
+        display: none;
+      }
     }
     }
   }
@@ -107,6 +112,7 @@ header {
     .right-container {
       .btn {
         display: none;
+        
       }
     }
 
@@ -363,7 +369,4 @@ header {
     }
   }
 
-  &.menu-mobile {
-    
-  }
 }

@@ -13,7 +13,7 @@ function Header() {
   const [menuAbertoJogos, setMenuAbertoJogos] = useState(false);
   const [menuAbertoEsportes, setMenuAbertoEsportes] = useState(false);
   const [isMenuMobileVisible, setIsMenuMobileVisible] = useState(false);
- 
+
 
   const alterarMenuJogos = () => {
     setMenuAbertoJogos(!menuAbertoJogos);
@@ -75,13 +75,17 @@ function Header() {
           <button className="btn btn-primary" onClick={() => setIsModalVisible(true)}>
             <img src="assets/icon-login.svg" alt="Icone login" title="Icone login" />
             Logar
-          </button> 
-          {isModalVisible ? <Modal onClose={() => setIsModalVisible(false)}/> : null}
-
+          </button>
+          {isModalVisible ? <Modal onClose={() => setIsModalVisible(false)} /> : null}
+          {/* 
           <button className="btn-mobile menu-mobile" onClick={() => setIsMenuMobileVisible(true)}>
             <img src="assets/icon-mobile.svg" alt="" />
-          </button> 
-          {isMenuMobileVisible? <MenuMobile onClose={() => setIsMenuMobileVisible(false)}  /> : null}
+          </button>  */}
+
+          <button className="btn-mobile menu-mobile" onClick={() => setIsMenuMobileVisible(true)}>
+            <img src="assets/icon-mobile.svg" alt="" className={isMenuMobileVisible ? 'hidden' : ''} />
+          </button>
+          {isMenuMobileVisible ? <MenuMobile onClose={() => setIsMenuMobileVisible(false)} /> : null}
         </div>
       </div>
     </header>
