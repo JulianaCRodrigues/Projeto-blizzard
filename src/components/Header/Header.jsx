@@ -77,10 +77,7 @@ function Header() {
             Logar
           </button>
           {isModalVisible ? <Modal onClose={() => setIsModalVisible(false)} /> : null}
-          {/* 
-          <button className="btn-mobile menu-mobile" onClick={() => setIsMenuMobileVisible(true)}>
-            <img src="assets/icon-mobile.svg" alt="" />
-          </button>  */}
+
 
           <button className="btn-mobile" onClick={() => setIsMenuMobileVisible(true)}>
             <img src="assets/icon-mobile.svg" alt="" className={isMenuMobileVisible ? 'hidden' : ''} />
