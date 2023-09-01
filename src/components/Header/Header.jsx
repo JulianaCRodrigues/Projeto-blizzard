@@ -82,7 +82,7 @@ function Header() {
             <img src="assets/icon-mobile.svg" alt="" />
           </button>  */}
 
-          <button className="btn-mobile menu-mobile" onClick={() => setIsMenuMobileVisible(true)}>
+          <button className="btn-mobile" onClick={() => setIsMenuMobileVisible(true)}>
             <img src="assets/icon-mobile.svg" alt="" className={isMenuMobileVisible ? 'hidden' : ''} />
           </button>
           {isMenuMobileVisible ? <MenuMobile onClose={() => setIsMenuMobileVisible(false)} /> : null}

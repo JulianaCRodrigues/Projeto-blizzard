@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 // import Modal from '../Modal/Modal'
 import MenuJogos from '../Menus/MenuJogos'
 import MenuEsportes from "../Menus/MenuEsportes";
 
-function MenuMobile() {
+function MenuMobile({onClose =() => {}}) {
 
 
   // const [isModalVisible, setIsModalVisible] = useState(false)
@@ -19,8 +20,14 @@ function MenuMobile() {
     setMenuAbertoEsportes(!menuAbertoEsportes);
   }
   return (
-    <section className={menuAbertoJogos || menuAbertoEsportes ? "menu-aberto" : ""}>
-          <nav>
+    <section className="menu-mobile">
+          <div className={menuAbertoJogos || menuAbertoEsportes ? "menu-aberto" : ""}>
+          <nav className="nav-mobile">
+          <button 
+        onClick={onClose}
+        className="close">
+          <img src="assets/close.svg" alt="" />
+        </button>
             <ul>
               <li>
                 <button onClick={alterarMenuJogos}>
@@ -74,7 +81,9 @@ function MenuMobile() {
 
         // </div> */}
 
+    </div>
     </section>
+
     );
 }
 

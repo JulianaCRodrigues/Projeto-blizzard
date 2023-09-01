@@ -76,43 +76,70 @@ header {
         margin-left: 1.6rem;
       }
     }
+
     .btn-mobile {
       display: none;
 
     }
 
+    .menu-mobile {
+      margin-bottom: -15rem;
+      .nav-mobile {
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
   }
 
-  
+
   @include responsive(991px) {
     .left-container {
       nav {
         display: none;
       }
     }
-    .right-container{
-      .btn-mobile{
-      display: block;
-      margin-left: 8.9rem;
 
-      .hidden {
-        display: none;
+    .right-container {
+      .btn-mobile {
+        display: block;
+        margin-left: 8.9rem;
+
+        .hidden {
+          display: none;
+        }
       }
     }
+
+    .modal {
+     .box {
+      width: 80%;
+     }
+    }
+
+    .menu {
+      
     }
   }
 
   @include responsive(560px) {
     height: 8rem;
+
     .left-container {
       .logo {
         max-width: 6.9rem;
       }
     }
+
     .right-container {
       .btn {
         display: none;
-        
+
       }
     }
 
