@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-// import Modal from '../Modal/Modal'
+import Modal from '../Modal/Modal'
 import MenuJogos from '../Menus/MenuJogos'
 import MenuEsportes from "../Menus/MenuEsportes";
 
 function MenuMobile({onClose =() => {}}) {
 
 
-  // const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(false)
   const [menuAbertoJogos, setMenuAbertoJogos] = useState(false);
   const [menuAbertoEsportes, setMenuAbertoEsportes] = useState(false);
  
@@ -66,20 +66,20 @@ function MenuMobile({onClose =() => {}}) {
 
           </nav>
    
-        {/* // <div className="right-container">
-        //   <button className="btn btn-outline">Criar Conta</button>
-        //   <button className="btn btn-primary" onClick={() => setIsModalVisible(true)}>
-        //     <img src="assets/icon-login.svg" alt="Icone login" title="Icone login" />
-        //     Logar
-        //   </button> 
-        //   {isModalVisible ? <Modal onClose={() => setIsModalVisible(false)}/> : null}
+        <div className="right-container">
+          <button className="btn btn-outline">Criar Conta</button>
+         <button className="btn btn-primary" onClick={() => setIsModalVisible(true)}>
+            <img src="assets/icon-login.svg" alt="Icone login" title="Icone login" />
+            Logar
+           </button> 
+          {isModalVisible ? <Modal onClose={() => setIsModalVisible(false)}/> : null}
 
-        //   <button className="btn-mobile" >
-        //     <img src="assets/icon-mobile.svg" alt="" />
+         <button className="btn-mobile" >
+            <img src="assets/icon-mobile.svg" alt="" />
            
-        //   </button> 
+          </button> 
 
-        // </div> */}
+         </div>
 
     </div>
     </section>

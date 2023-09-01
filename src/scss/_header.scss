@@ -85,6 +85,10 @@ header {
     .menu-mobile {
       margin-bottom: -15rem;
 
+      .right-container {
+        display: none;
+      }
+
       .nav-mobile {
         ul {
           li {
